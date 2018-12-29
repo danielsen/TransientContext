@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransientContext", "TransientContext\TransientContext.csproj", "{C4DDC466-030D-497F-9ACC-09965688FABA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransientContext.Tests", "TransientContext.Tests\TransientContext.Tests.csproj", "{E9539014-711C-47A6-81D4-A59746A42B6B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4DDC466-030D-497F-9ACC-09965688FABA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4DDC466-030D-497F-9ACC-09965688FABA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4DDC466-030D-497F-9ACC-09965688FABA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4DDC466-030D-497F-9ACC-09965688FABA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9539014-711C-47A6-81D4-A59746A42B6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9539014-711C-47A6-81D4-A59746A42B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9539014-711C-47A6-81D4-A59746A42B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9539014-711C-47A6-81D4-A59746A42B6B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3DF49178-57B7-427E-A1D8-C57CA5E25C9F}
+	EndGlobalSection
+EndGlobal
