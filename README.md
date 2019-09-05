@@ -37,7 +37,7 @@ the PostgreSQL examples connection strings are stored in user secrets files as d
 ### NUnit Usage
 
 1. Begin by creating a database fixture. In the example below, `DomainContext` represents
-the `EntityFramework` DBContext that is being created. For reference, see `TransientContext.Tests.NUnit/Common/Data/DomainContext.cs`.
+the `EntityFramework` `DBContext` that is being created. For reference, see `TransientContext.Tests.NUnit/Common/Data/DomainContext.cs`.
 
 	    public class DatabaseFixture : IDisposable
 	    {
