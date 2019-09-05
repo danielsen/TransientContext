@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TransientContext.Postgresql
+namespace TransientContext.Common
 {
     class DatabaseNameGenerator : IDatabaseNameGenerator
     {

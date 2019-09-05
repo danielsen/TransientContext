@@ -1,20 +1,20 @@
-﻿using Npgsql;
 using TransientContext.Common;
+using System.Data.SQLite;
 
-namespace TransientContext.Postgresql
+namespace TransientContext.Sqlite
 {
-    class ConnectionStringManager : IConnectionStringManager
+    public class ConnectionStringManager : IConnectionStringManager
     {
         public ConnectionStringManager(string defaultConnectionString)
         {
             Default = defaultConnectionString;
         }
-
+        
         public void SetCreatedDatabaseName(string value)
         {
-            var connectionStringBuilder = new NpgsqlConnectionStringBuilder(Default)
+            var connectionStringBuilder = new SQLiteConnectionStringBuilder(Default)
             {
-                Database = value
+                DataSource = value
             };
             CreatedDatabase = connectionStringBuilder.ToString();
         }

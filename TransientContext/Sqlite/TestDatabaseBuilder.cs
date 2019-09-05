@@ -1,8 +1,9 @@
 ﻿using System;
 using Microsoft.Extensions.Configuration;
 using TransientContext.Common;
+using TransientContext.Postgresql;
 
-namespace TransientContext.Postgresql
+namespace TransientContext.Sqlite
 {
     public class TestDatabaseBuilder
     {

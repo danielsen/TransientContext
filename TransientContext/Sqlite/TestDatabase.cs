@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using TransientContext.Common;
 
-namespace TransientContext.Postgresql
+namespace TransientContext.Sqlite
 {
     class TestDatabase : ITestDatabase
     {

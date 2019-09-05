@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransientContext", "TransientContext\TransientContext.csproj", "{C4DDC466-030D-497F-9ACC-09965688FABA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransientContext.Tests", "TransientContext.Tests\TransientContext.Tests.csproj", "{E9539014-711C-47A6-81D4-A59746A42B6B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransientContext.Tests.Xunit", "TransientContext.Tests.Xunit\TransientContext.Tests.Xunit.csproj", "{E9539014-711C-47A6-81D4-A59746A42B6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransientContext.Tests.NUnit", "TransientContext.Tests.NUnit\TransientContext.Tests.NUnit.csproj", "{9CD587E2-F28D-4FF2-B1F7-AC8C4123C69D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{E9539014-711C-47A6-81D4-A59746A42B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9539014-711C-47A6-81D4-A59746A42B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9539014-711C-47A6-81D4-A59746A42B6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CD587E2-F28D-4FF2-B1F7-AC8C4123C69D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CD587E2-F28D-4FF2-B1F7-AC8C4123C69D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CD587E2-F28D-4FF2-B1F7-AC8C4123C69D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CD587E2-F28D-4FF2-B1F7-AC8C4123C69D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

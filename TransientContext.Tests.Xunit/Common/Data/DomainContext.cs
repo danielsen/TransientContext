@@ -1,7 +1,6 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
-namespace TransientContext.Tests
+namespace TransientContext.Tests.Xunit.Common.Data
 {
     public class User
     {
@@ -9,9 +8,9 @@ namespace TransientContext.Tests
         public string Username { get; set; }
     }
 
-    public class TestDbContext : DbContext
+    public class DomainContext : DbContext
     {
-        public TestDbContext(DbContextOptions options) : base(options)
+        public DomainContext(DbContextOptions options) : base(options)
         {
         }
 

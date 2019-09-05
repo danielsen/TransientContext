@@ -1,4 +1,4 @@
-﻿namespace TransientContext.Postgresql
+﻿namespace TransientContext.Common
 {
     interface IConnectionStringManager
     {
