@@ -10,7 +10,7 @@ namespace TransientContext.Tests.NUnit.Common.Data.Sqlite
         public DatabaseFixture()
         {
             TestDatabase = new TestDatabaseBuilder()
-                .WithConnectionString("Data Source=domain.db")
+                .WithConnectionString("Data Source=/tmp/domain.db")
                 .Build();
             TestDatabase.Create();
 

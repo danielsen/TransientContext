@@ -29,20 +29,6 @@ namespace TransientContext.Sqlite
             _createdDatabaseName = _databaseNameGenerator.Generate();
             _connectionStringManager.SetCreatedDatabaseName(_createdDatabaseName);
             ConnectionString = _connectionStringManager.CreatedDatabase;
-            _connection.Execute(_connectionStringManager.Default, BuildCreateStatement());
-        }
-
-        private string BuildCreateStatement()
-        {
-            StringBuilder stringBuilder = new StringBuilder($"create database {_createdDatabaseName}");
-
-            if (!string.IsNullOrWhiteSpace(TemplateDatabase))
-            {
-                stringBuilder.Append($" template {TemplateDatabase}");
-            }
-
-            stringBuilder.Append(";");
-            return stringBuilder.ToString();
         }
 
         public void RunScripts(string scriptFolderPath)
@@ -61,19 +47,16 @@ namespace TransientContext.Sqlite
 
         public void Drop()
         {
-            _connection.Execute(_connectionStringManager.Default, 
-                $"select pid, pg_terminate_backend(pid) from pg_stat_activity where datname = '{_createdDatabaseName}' and pid <> pg_backend_pid();");
-            _connection.Execute(_connectionStringManager.Default,
-                $"drop database {_createdDatabaseName}");
+            if (Exists())
+            {
+                File.Delete(_connectionStringManager.DatabaseName);
+            }
         }
 
         public bool Exists()
         {
-            _connection.ExecuteReader(_connectionStringManager.Default,
-                $"select 1 as result from pg_database where datname = '{_createdDatabaseName}'", 
-                out int rows);
-
-            return rows > 0;
+            var file = File.Exists(_connectionStringManager.DatabaseName);
+            return file;
         }
     }
 }

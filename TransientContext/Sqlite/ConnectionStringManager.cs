@@ -17,9 +17,11 @@ namespace TransientContext.Sqlite
                 DataSource = value
             };
             CreatedDatabase = connectionStringBuilder.ToString();
+            DatabaseName = value;
         }
 
         public string Default { get; }
         public string CreatedDatabase { get; private set; }
+        public string DatabaseName { get; private set; }
     }
 }

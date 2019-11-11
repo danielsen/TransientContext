@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
     <IsPackable>false</IsPackable>
     <UserSecretsId>57a04ea5-19b4-483f-af4d-a96930e166e5</UserSecretsId>
     <RootNamespace>TransientContext.Tests.Xunit</RootNamespace>

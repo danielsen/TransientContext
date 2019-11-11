@@ -1,5 +1,5 @@
 using NUnit.Framework;
-using TransientContext.Tests.NUnit.Common.Data.Postgresql;
+using TransientContext.Tests.NUnit.Common.Data.Sqlite;
 
 namespace TransientContext.Tests.NUnit.Integration.Sqlite
 {

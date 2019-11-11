@@ -7,7 +7,7 @@ PostgreSQL and SQLite databases.
 
 ### Packages
 
-- Current Version: `1.1.0`
+- Current Version: `1.2.0`
 - Target Framework: `.NET Standard 2.0`
 
 ### Dependencies

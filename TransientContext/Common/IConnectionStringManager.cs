@@ -5,5 +5,6 @@
         void SetCreatedDatabaseName(string value);
         string Default { get; }
         string CreatedDatabase { get; }
+        string DatabaseName { get; }
     }
 }
